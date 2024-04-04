@@ -1,0 +1,137 @@
+body{
+    font-family: sans-serif;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-color: rgb(62, 64, 114);
+    font-family: "Anton", sans-serif;
+  }
+  
+  
+  .navbar a {
+    display: block;
+    color: #959194;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    float: left;
+  }
+
+  .navbar a:hover{
+    color:rgb(32, 54, 72);
+  }
+
+  .strong{
+    font-size: 30px;
+    font-family: "Anton", sans-serif;
+  }
+
+  #name{
+    font-size: 30px;
+  }
+  
+  #items{
+    display: flex;
+    justify-content: flex-end;
+    font-size:20px;
+  }
+
+  .main{
+    display: flex;
+    justify-content:space-between;
+    padding:20px;
+  }
+  img{
+    height:250px;
+  }
+
+  .right{
+    padding: 0 0 0 70px;
+  }
+  #title{
+    font-size:large
+  }
+
+.popup_img {
+    display: none; 
+}
+
+.popup:hover .popup_img {
+    display: block; 
+}
+
+.popup_img img {
+    display: block;
+    position:absolute;
+    top:600px;
+    right: 20%;
+    border: 0.2px solid #ccc;
+    background-color: #fff;
+    padding: 10px;
+    z-index: 1; 
+}
+
+
+
+
+@media (max-width: 526px){
+    .navbar ul {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column;
+    }
+    
+  }
+
+
+@media only screen and (min-width: 100px) {
+    /* For tablets: */
+
+    /* this will change the container class background to red when tablet*/
+
+    .col {
+        background-color: lavenderblush;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: will change the container class to orange*/
+
+    .col {
+        background-color: lightgray;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    /* For desktop: will change the container class to orange*/
+
+    .col {
+        background-color: lightgoldenrodyellow;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    /* For desktop: will change the container class to orange*/
+
+    .col {
+        background-color: lavender;
+    }
+}
+
+/* Orientation of landscape */
+
+@media only screen and (orientation: landscape) {
+    /* this will change the background to light blue when view is landscape */
+    .col{
+        background-color: lightblue;
+    }
+}
+
