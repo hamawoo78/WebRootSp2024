@@ -1,0 +1,279 @@
+
+<!DOCTYPE html lang="en">
+<head>
+<title>Device Resources</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link href=".../css/style.css" rel="stylesheet" type="text/css" />
+
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../css/bootstrap.css" />
+
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style_ReaserchPage.css" />
+
+</head>
+<body>
+  <div class = "header">
+    <div class = "navbar">
+        <ul>
+          <div id="home">
+              <li><a href="../index.html">Home</a></li>
+          </div>
+          <div id="itemsRS">
+              <li><a href="#a">Android Sensor Overview</a></li>
+              <li><a href="#b">13 kinds of sensors in mobile phones</a></li>
+              <li><a href="#c">Interaction composite sensors</a></li>
+              <li><a href="#d">Environment sensors</a></li>
+              <li><a href="#e">Sensor APIs </a></li>
+          </div>
+        </ul>
+    </div>
+</div>
+
+
+<ol>
+  <div id ="itemHead">
+    <h2 id="a"><li>
+    <a href="https://developer.android.com/develop/sensors-and-location/sensors/sensors_overview">Android Sensor Overview</a></h2><br />
+    
+    <div class="rate">
+      <span>
+        <label style="color:rgb(235, 194, 32);">★</label>
+        <label style="color:rgb(235, 194, 32);">★</label>
+        <label style="color:rgb(235, 194, 32);">★</label>
+        <label style="color:rgb(235, 194, 32);">★</label>
+        <label style="color:rgb(235, 194, 32);">★</label>
+      </span>
+    </div> 
+  </div> 
+  
+  Most Android devices come equipped with sensors that detect motion, orientation, and environmental conditions. These sensors provide precise data, helpful for monitoring device movement or environmental changes. For instance, games can utilize gravity sensors for user gestures, while weather apps use temperature and humidity sensors to calculate dew point, and travel apps use geomagnetic sensors for compass bearings.<br />
+    <ul>
+      <li>
+        <b>Motion sensors </b><br />
+        These sensors measure acceleration forces and rotational forces along three axes. This category includes accelerometers, gravity sensors, gyroscopes, and rotational vector sensors.
+      </li>
+      <li>
+        <b>Environmental sensors</b> <br />
+        These sensors measure various environmental parameters, such as ambient air temperature and pressure, illumination, and humidity. This category includes barometers, photometers, and thermometers.
+      </li>
+      <li>
+        <b>Position sensors</b> <br />
+        These sensors measure the physical position of a device. This category includes orientation sensors and magnetometers.
+      </li>
+    </ul>
+  </li>
+
+
+  <div id = "itemHead">
+    <h2 id="b"><li>
+      <a href="https://www.utmel.com/blog/categories/sensors/13-kinds-of-sensors-in-mobile-phones-and-what-are-recorded-by-the-sensors">13 kinds of sensors in mobile phones</a></h2><br />
+      <div class="rate">
+        <span>
+          <label style="color:rgb(235, 194, 32);">★</label>
+          <label style="color:rgb(235, 194, 32);">★</label>
+          <label style="color:rgb(235, 194, 32);">★</label>
+          <label>★</label>
+          <label>★</label>
+        </span>
+      </div> 
+  </div>
+
+  The sensor in a phone refers to the components of the phone that can be felt by the chip, such as distance, light, temperature, brightness, and pressure. These sensors are getting smaller and smaller, their performance is increasing stronger, and their cost is getting lower and lower, just like all electronic components.<br />
+    <ul>
+      <li>Accelerometer: Detects motion, orientation, and vibration.</li>
+      <li>Gyroscope: Measures angular velocity and helps with motion tracking.</li>
+      <li>Magnetometer: Determines the device's orientation relative to the Earth's magnetic field.</li>
+      <li>Proximity Sensor: Detects nearby objects to control screen brightness and prevent accidental touches during calls.</li>
+      <li>Ambient Light Sensor: Adjusts screen brightness based on surrounding light conditions.</li>
+      <li>Barometer: Measures atmospheric pressure for weather forecasting and altitude detection.</li> 
+      <li>Thermometer: Monitors device temperature for safety and performance optimization.</li>
+      <li>Humidity Sensor: Measures humidity levels in the environment.</li>
+      <li>Heart Rate Sensor: Tracks the user's heart rate for health and fitness applications.</li>
+      <li>Fingerprint Sensor: Enables biometric authentication for device security.</li>
+      <li>GPS: Determines the device's location for navigation and location-based services.</li>
+      <li>Microphone: Records audio for calls, voice commands, and other applications.</li>
+      <li>Camera Sensor: Captures images and videos, also used for augmented reality and facial recognition.</li>
+
+    </ul>
+  </li>
+
+  <div id = "itemHead">
+  <h2 id="c"><li><p >
+    <a href="https://source.android.com/docs/core/interaction/sensors/sensor-types#interaction_composite_sensors">Interaction composite sensors</a></h2><br />
+    <div class="rate">
+      <span>
+        <label style="color:rgb(235, 194, 32);">★</label>
+        <label style="color:rgb(235, 194, 32);">★</label>
+        <label style="color:rgb(235, 194, 32);">★</label>
+        <label style="color:rgb(235, 194, 32);">★</label>
+        <label >★</label>
+      </span>
+    </div>
+  </div>
+    
+    Some sensors are mostly used to detect interactions with the user. We don't define how those sensors must be implemented, but they must be low power and it's the responsibility of the device manufacturer to verify their quality in terms of user experience.<br />
+    <br />
+    <ul>
+      <li><b>Wake up gesture</b><br />
+        A wake up gesture sensor enables waking up the device based on a device specific motion. When this sensor triggers, the device behaves as if the power button was pressed, turning the screen on. This behavior (turning on the screen when this sensor triggers) might be deactivated by the user in the device settings. 
+      </li>
+      <li><b>Pick up gesture</b> <br />
+        A pick-up gesture sensor triggers when the device is picked up regardless of wherever it was before (desk, pocket, bag).
+      </li>
+      <li><b>Glance gesture</b><br />
+        A glance gesture sensor enables briefly turning the screen on to enable the user to glance content on screen based on a specific motion. When this sensor triggers, the device will turn the screen on momentarily to allow the user to glance notifications or other content while the device remains locked in a non-interactive state (dozing), then the screen will turn off again. 
+      </li>
+    </ul>
+  </li>
+    
+  <div id ="itemHead">
+    <h2 id="d"><li>
+    <a href="https://developer.android.com/develop/sensors-and-location/sensors/sensors_environment">Environment sensors </a></h2><br />
+    <div class="rate">
+      <span>
+        <label style="color:rgb(235, 194, 32);">★</label>
+        <label style="color:rgb(235, 194, 32);">★</label>
+        <label style="color:rgb(235, 194, 32);">★</label>
+        <label style="color:rgb(235, 194, 32);">★</label>
+        <label style="color:rgb(235, 194, 32);">★</label>
+      </span>
+    </div> 
+  </div>
+  The Android platform provides four sensors which monitor relative ambient humidity, illuminance, ambient pressure, and ambient temperature near an Android-powered device.<br />
+  Unlike most motion sensors and position sensors, which return a multi-dimensional array of sensor values for each SensorEvent, environment sensors return a single sensor value for each data event. <br />
+  
+  <br />
+  <table border="1">
+    <caption>Table 1. Environment sensors that are supported on the Android platform.</caption>
+    <thead>
+      <tr>
+        <th>Sensor</th>
+        <th>Sensor event data</th>
+        <th>Units of measure</th>
+        <th>Data description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>TYPE_AMBIENT_TEMPERATURE</td>
+        <td>event.values[0]</td>
+        <td>°C</td>
+        <td>Ambient air temperature.</td>
+      </tr>
+      <tr>
+        <td>TYPE_LIGHT</td>
+        <td>event.values[0]</td>
+        <td>lx</td>
+        <td>Illuminance.</td>
+      </tr>
+      <tr>
+        <td>TYPE_PRESSURE</td>
+        <td>event.values[0]</td>
+        <td>hPa or mbar</td>
+        <td>Ambient air pressure.</td>
+      </tr>
+      <tr>
+        <td>TYPE_RELATIVE_HUMIDITY</td>
+        <td>event.values[0]</td>
+        <td>%</td>
+        <td>Ambient relative humidity.</td>
+      </tr>
+      <tr>
+        <td>TYPE_TEMPERATURE</td>
+        <td>event.values[0]</td>
+        <td>°C</td>
+        <td>Device temperature.1</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  </li>
+
+  <div id ="itemHead">
+    <h2 id="e"><li>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/API/Sensor_APIs">Sensor APIs</a></h2><br />
+    
+    <div class="rate">
+      <span>
+        <label style="color:rgb(235, 194, 32);">★</label>
+        <label style="color:rgb(235, 194, 32);">★</label>
+        <label style="color:rgb(235, 194, 32);">★</label>
+        <label style="color:rgb(235, 194, 32);">★</label>
+        <label style="color:rgb(235, 194, 32);">★</label>
+      </span>
+    </div> 
+  </div> 
+  
+  The Sensor APIs are a set of interfaces built to a common design that expose device sensors in a consistent way to the web platform.
+  Below showing some examle that is requred that the application access data from sensor on user's device. <br />
+  <br />  
+  <ul>
+      <li>
+        <b>Defensive programming </b><br />
+        Defensive programming requires three strategies such as Checking for thrown errors when instantiating a sensor object, Listening for errors thrown during its use, and Handling the errors gracefully so that the user experience is enhanced rather than degraded.
+      </li>
+      <br />
+      <li>
+        <b>Permissions and Permissions Policy</b> <br />
+        The following table describes for each sensor type, the name required for the Permissions API, the iframe element's allow attribute and the Permissions-Policy directive.
+      </li>
+      <br />
+      <li>
+        <b>Position sensors</b> <br />
+        These sensors measure the physical position of a device. This category includes orientation sensors and magnetometers.
+        <table border="1">
+          <caption>Sensor Permission Policy</caption>
+          <thead>
+            <tr>
+              <th>Sensor</th>
+              <th>Permission Policy Name</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>AbsoluteOrientationSensor</td>
+              <td>'accelerometer', 'gyroscope', and 'magnetometer'</td>
+            </tr>
+            <tr>
+              <td>Accelerometer</td>
+              <td>'accelerometer'</td>
+            </tr>
+            <tr>
+              <td>AmbientLightSensor</td>
+              <td>'ambient-light-sensor'</td>
+            </tr>
+            <tr>
+              <td>GravitySensor</td>
+              <td>'accelerometer'</td>
+            </tr>
+            <tr>
+              <td>Gyroscope</td>
+              <td>'gyroscope'</td>
+            </tr>
+            <tr>
+              <td>LinearAccelerationSensor</td>
+              <td>'accelerometer'</td>
+            </tr>
+            <tr>
+              <td>Magnetometer</td>
+              <td>'magnetometer'</td>
+            </tr>
+            <tr>
+              <td>RelativeOrientationSensor</td>
+              <td>'accelerometer', and 'gyroscope'</td>
+            </tr>
+          </tbody>
+        </table>        
+      </li>
+    </ul>
+  </li>
+
+</ol>
+
+</body>
+</html>
+

@@ -1,0 +1,101 @@
+body{
+    font-family: sans-serif;
+    margin:1px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  background-color: rgb(62, 64, 114);
+  font-family: "Anton", sans-serif;
+}
+
+
+.navbar a {
+  display: block;
+  color: #959194;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  float: left;
+}
+
+.navbar a:hover{
+  color:rgb(32, 54, 72);
+}
+
+.strong{
+  font-size: 30px;
+  font-family: "Anton", sans-serif;
+}
+
+#home{
+  font-size: 30px;
+}
+
+#itemsRS{
+  display: flex;
+  justify-content: flex-end;
+  font-size:18px;
+}
+
+.main{
+  display: flex;
+  justify-content:space-between;
+  padding:20px;
+}
+
+#itemHead{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+h2{
+  font-family: "Anton", sans-serif;
+}
+h2 a{
+  text-decoration: none;
+  color : rgb(52, 9, 30);
+}
+
+h2 a:hover{
+  color : rgb(109, 34, 71);
+  text-shadow:0.1px 0.1px;
+}
+
+.rate{
+  padding:  0 0 0 20px;
+}
+.rate label{
+  color: #D2D2D2;
+  cursor: pointer;
+  font-size: 26px;
+  padding: 0 5px 0 0;
+}
+
+
+@media (max-width: 920px){
+    .navbar ul, #itemsRS {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column;
+    }
+    
+  }
+
+  @media (max-width: 526px){
+    #itemHead{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column;
+    }
+    
+  }

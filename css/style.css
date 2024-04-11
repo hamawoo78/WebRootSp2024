@@ -1,5 +1,6 @@
 body{
     font-family: sans-serif;
+
 }
 
 .navbar ul {
@@ -27,13 +28,17 @@ body{
   .navbar a:hover{
     color:rgb(32, 54, 72);
   }
+  
+  #sr{
+    color:rgb(36, 6, 6);
+  }
 
   .strong{
     font-size: 30px;
     font-family: "Anton", sans-serif;
   }
 
-  #name{
+  #home{
     font-size: 30px;
   }
   
@@ -70,8 +75,8 @@ body{
 .popup_img img {
     display: block;
     position:absolute;
-    top:600px;
-    right: 20%;
+    top:500px;
+    left: 2%;
     border: 0.2px solid #ccc;
     background-color: #fff;
     padding: 10px;
@@ -79,10 +84,24 @@ body{
 }
 
 
+@media (max-width: 526px) {
+  header {
+    flex-wrap: wrap;
+  }
+}
 
 
 @media (max-width: 526px){
-    .navbar ul {
+    .navbar ul, #items{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column;
+    }
+    
+  }
+  @media (max-width: 526px){
+    .main{
       display: flex;
       justify-content: flex-start;
       align-items: center;
@@ -92,10 +111,10 @@ body{
   }
 
 
-@media only screen and (min-width: 100px) {
+/* @media only screen and (min-width: 100px) {
     /* For tablets: */
 
-    /* this will change the container class background to red when tablet*/
+    /* this will change the container class background to red when tablet
 
     .col {
         background-color: lavenderblush;
@@ -103,7 +122,7 @@ body{
 }
 
 @media only screen and (min-width: 768px) {
-    /* For desktop: will change the container class to orange*/
+    /* For desktop: will change the container class to orange
 
     .col {
         background-color: lightgray;
@@ -111,7 +130,7 @@ body{
 }
 
 @media only screen and (min-width: 992px) {
-    /* For desktop: will change the container class to orange*/
+    /* For desktop: will change the container class to orange
 
     .col {
         background-color: lightgoldenrodyellow;
@@ -119,19 +138,19 @@ body{
 }
 
 @media only screen and (min-width: 1200px) {
-    /* For desktop: will change the container class to orange*/
+    /* For desktop: will change the container class to orange
 
     .col {
         background-color: lavender;
     }
 }
 
-/* Orientation of landscape */
+/* Orientation of landscape 
 
 @media only screen and (orientation: landscape) {
-    /* this will change the background to light blue when view is landscape */
+    /* this will change the background to light blue when view is landscape
     .col{
         background-color: lightblue;
     }
 }
-
+ */
