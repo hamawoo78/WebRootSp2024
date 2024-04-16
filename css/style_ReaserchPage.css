@@ -79,6 +79,10 @@ h2 a:hover{
   padding: 0 5px 0 0;
 }
 
+#comment{
+  list-style-type: none;
+}
+
 
 @media (max-width: 920px){
     .navbar ul, #itemsRS {
